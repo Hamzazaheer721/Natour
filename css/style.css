@@ -44,6 +44,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
   backface-visibility: hidden; /* It stops the animation from moving up */
 }
 
@@ -107,4 +108,30 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  margin-top: 60px;
+  transition: all 0.2s;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
