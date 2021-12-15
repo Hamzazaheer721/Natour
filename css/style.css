@@ -6,6 +6,51 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-120px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0.5;
+    transform: translateX(120px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* translateY goes positive when we move down*/
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,38 +123,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0.5;
-    transform: translateX(-120px);
-  }
-
-  50% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0.5;
-    transform: translateX(120px);
-  }
-
-  50% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -119,6 +132,7 @@ body {
   border-radius: 100px;
   margin-top: 60px;
   transition: all 0.2s;
+  position: relative; /* We put this because we need to give reference to position: absolute in btn::after*/
 }
 
 .btn-white {
@@ -134,4 +148,34 @@ body {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  /* It will be copy of the button but it will be taken as a child of button */
+  content: "";
+  display: inline-block;
+  width: 100%; /* 100% height and width of btn */
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.6) scaleY(1.3);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  /* Animation fill mode applies styles of 0% to element before the animation starts */
+  animation-fill-mode: backwards;
 }
