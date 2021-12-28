@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Sass CodePen Setup link is as follows :",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/Hamzazaheer721/Natour/issues"
   },
-  "homepage": "https://github.com/Hamzazaheer721/Natour#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.0"
-  }
+  "homepage": "https://github.com/Hamzazaheer721/Natour#readme"
 }
