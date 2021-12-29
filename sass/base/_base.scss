@@ -1,0 +1,20 @@
+html {
+  /* font-size: 10px; we have to avoid using px here, since we are overwriting browser's actual font size, and we don't want that */
+  /* Reason?: some people have bad eye sight, so they manually change the font size of browser */
+  /* THe browser 100% font-size is equal to 16%*/
+  /* font-size: 100%; 16px */
+  font-size: 62.5%; /* 10px  */
+  /* I have put font-size in base because it defines the base definition of rem */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* Box sizing property is not inherited by itself, so by using this, we inherit it */
+}
+
+body {
+  box-sizing: border-box;
+}

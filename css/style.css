@@ -6,14 +6,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-html {
-  /* font-size: 10px; we have to avoid using px here, since we are overwriting browser's actual font size, and we don't want that */
-  /* Reason?: some people have bad eye sight, so they manually change the font size of browser */
-  /* THe browser 100% font-size is equal to 16%*/
-  /* font-size: 100%; 16px */
-  font-size: 62.5%;
-  /* 10px  */ }
-
 @keyframes moveInRight {
   0% {
     opacity: 0.5;
@@ -43,6 +35,15 @@ html {
     opacity: 1;
     transform: translateY(0); } }
 
+html {
+  /* font-size: 10px; we have to avoid using px here, since we are overwriting browser's actual font size, and we don't want that */
+  /* Reason?: some people have bad eye sight, so they manually change the font size of browser */
+  /* THe browser 100% font-size is equal to 16%*/
+  /* font-size: 100%; 16px */
+  font-size: 62.5%;
+  /* 10px  */
+  /* I have put font-size in base because it defines the base definition of rem */ }
+
 *,
 *::after,
 *::before {
@@ -52,31 +53,14 @@ html {
   /* Box sizing property is not inherited by itself, so by using this, we inherit it */ }
 
 body {
+  box-sizing: border-box; }
+
+body {
   font-family: "Lato";
   font-weight: 400;
   color: #777;
   padding: 3rem;
-  line-height: 1.7;
-  box-sizing: border-box; }
-
-.header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  line-height: 1.7; }
 
 .heading-primary {
   color: #fff;
@@ -103,6 +87,25 @@ body {
     font-weight: 700;
     letter-spacing: 1.76rem;
     animation: moveInLeft 1s ease-out; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
