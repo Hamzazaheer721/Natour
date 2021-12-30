@@ -35,3 +35,25 @@ body {
     animation: moveInLeft 1s ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}

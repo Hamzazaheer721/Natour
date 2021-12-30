@@ -1,11 +1,5 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+/* COLORS */
+/* GRID */
 @keyframes moveInRight {
   0% {
     opacity: 0.5;
@@ -88,6 +82,27 @@ body {
     letter-spacing: 1.76rem;
     animation: moveInLeft 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    cursor: pointer;
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 0.8rem; }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
@@ -106,6 +121,22 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.row {
+  width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row [class^="col-1"] {
+    float: left; }
+    .row [class^="col-1"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -154,3 +185,8 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   /* Animation fill mode applies styles of 0% to element before the animation starts */
   animation-fill-mode: backwards; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
