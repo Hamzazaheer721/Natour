@@ -11,5 +11,7 @@ Sass CodePen Setup link is as follows :
 You can select the attributes with attribute selector in css
 
 -> [class^="col-"] {} // All classes that start with col-
+
 -> [class*="col-] {} // All classes that contain col-
+
 -> [class$="col-"] {} // All classes that end with col-
