@@ -15,3 +15,10 @@ You can select the attributes with attribute selector in css
 -> [class*="col-] {} // All classes that contain col-
 
 -> [class$="col-"] {} // All classes that end with col-
+
+======= NOTE ======
+==> Perspective <==
+
+1. Perspective is used to give some perspective to 3d Positioned Element.
+2. It defines how far an element is from the user, so lower the value, the more intense the 3d effect would be.
+3. When defining the perspective to an element, it is the child elements which gets the perspective view, not the element itself.
