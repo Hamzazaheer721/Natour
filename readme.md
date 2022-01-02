@@ -38,6 +38,7 @@ You can select the attributes with attribute selector in css
    ----card**picture (correct)
 
 ==> box-declaration-break <==
+
 It decides how element fragments should be rendered when broken across different multiple lines, columns or pages.
 -> box-declaration-break: clone
 Each element is rendered independently, with specified border, padding and margin wrapping each fragment. border-radius, border-image,
