@@ -28,3 +28,28 @@ You can select the attributes with attribute selector in css
 
 1. Backface of an element is mirror image of front-face being displayed
 2. It is useful when element is rotated, it lets you decide if user should see the backface or not.
+
+//////////// NOTE /////////////////
+
+1. In BEM, we don't nest the element names, in following we will create new element while keeping the name of the block.
+   -- card
+   ---card**side
+   ----card**side**picture (incorrect)
+   ----card**picture (correct)
+
+==> box-declaration-break <==
+It decides how element fragments should be rendered when broken across different multiple lines, columns or pages.
+-> box-declaration-break: clone
+Each element is rendered independently, with specified border, padding and margin wrapping each fragment. border-radius, border-image,
+and box-shadow are applied to each fragment independtly. background is also drawn independently to each fragment, which means that
+background-image with background-repat: no-repeat may nevertheless repeat multiple times
+
+==> background-blend-mode <==
+
+Specifies the blending mode of each background layer (color / image)
+
+////////////// NOTE /////////////
+Sometimes, when the child div is put into parent, the border-radius of the parent is lost, because child overflows it
+
+===> Quick FIX <===
+give overflow:hidden to parent;
