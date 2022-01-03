@@ -277,7 +277,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  /* BACKSIDE FUNCTIONALITY */ }
   .card__side {
     position: absolute;
     top: 0;
@@ -341,6 +342,21 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  .card__price-box {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .section-about {
   background-color: #f7f7f7;
