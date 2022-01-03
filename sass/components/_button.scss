@@ -20,6 +20,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
@@ -36,7 +45,7 @@
 
   &::after {
     /* It will be copy of the button but it will be taken as a child of button */
-    content: "";
+    content: '';
     display: inline-block;
     width: 100%; /* 100% height and width of btn */
     height: 100%;

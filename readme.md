@@ -54,3 +54,6 @@ Sometimes, when the child div is put into parent, the border-radius of the paren
 
 ===> Quick FIX <===
 give overflow:hidden to parent;
+
+===> NOTE <====
+Clip path in google chrome breaks the overflow property
