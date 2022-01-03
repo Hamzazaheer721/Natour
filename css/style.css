@@ -328,6 +328,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     /* It will cause overflow to not work */
     border-top-left-radius: 0.3rem;
+    /* Using this to manually give border since clip-path destroyed our overflow fix */
     border-top-right-radius: 0.3rem;
     position: relative; }
     .card__picture-1 {
