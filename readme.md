@@ -67,3 +67,6 @@ should wrap.
 By default, inline content wraps around the margin-box. Hence, shape-outside property allows customization to its
 wrapping, making it possible to wrap it around complex objects rather than simple boxes.
 Note: This is very demanding property, it requires the width, height and float as well.
+
+==================== TIP ======================
+Best way to move around an floated element is to manipulate it with transform.
