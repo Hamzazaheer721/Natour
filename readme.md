@@ -57,3 +57,12 @@ give overflow:hidden to parent;
 
 ===> NOTE <====
 Clip path in google chrome breaks the overflow property
+
+//////// NOTE ///////////
+
+==> shape-outside <==
+
+shape outside property specifies the shape, which usually is non-rectangular, around which adjacent inline-content
+should wrap.
+By default, inline content wraps around the margin-box. Hence, shape-outside property allows customization to its
+wrapping, making it possible to wrap it around complex objects rather than simple boxes.
