@@ -12,21 +12,52 @@
   &__shape {
     width: 15rem;
     height: 15rem;
-    background-color: orangered;
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    overflow: hidden; // to avoid black line appearing ahead of shape
   }
 
   &__img {
     // width: 100%; half filled circle, because image is wider than its height so we will specify its height
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s; //This causes a line right ahead of img so to avoid it we use overflow:hidden on parent
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      20%
+    ); // to move the picture downward, we use positive value for Y axis in this case
+    color: $color-white;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; // to remove the shaky effect when we hover over it
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(0.3rem) brightness(80%);
   }
 }

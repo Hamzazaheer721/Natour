@@ -41,21 +41,22 @@ You can select the attributes with attribute selector in css
 
 It decides how element fragments should be rendered when broken across different multiple lines, columns or pages.
 -> box-declaration-break: clone
-Each element is rendered independently, with specified border, padding and margin wrapping each fragment. border-radius, border-image,
-and box-shadow are applied to each fragment independtly. background is also drawn independently to each fragment, which means that
-background-image with background-repat: no-repeat may nevertheless repeat multiple times
+Each element is rendered independently, with specified border, padding and margin wrapping each fragment. border-radius, border-image, and box-shadow are applied to each fragment independently. background is also drawn independently to each fragment, which means that background-image with background-repeat: no-repeat may nevertheless repeat multiple times
 
 ==> background-blend-mode <==
 
 Specifies the blending mode of each background layer (color / image)
 
 ////////////// NOTE /////////////
+
 Sometimes, when the child div is put into parent, the border-radius of the parent is lost, because child overflows it
 
 ===> Quick FIX <===
+
 give overflow:hidden to parent;
 
 ===> NOTE <====
+
 Clip path in google chrome breaks the overflow property
 
 //////// NOTE ///////////
