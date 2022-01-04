@@ -70,4 +70,5 @@ wrapping, making it possible to wrap it around complex objects rather than simpl
 Note: This is very demanding property, it requires the width, height and float as well.
 
 ==================== TIP ======================
+
 Best way to move around an floated element is to manipulate it with transform.
