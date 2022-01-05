@@ -72,3 +72,7 @@ Note: This is very demanding property, it requires the width, height and float a
 ==================== TIP ======================
 
 Best way to move around an floated element is to manipulate it with transform.
+
+=== Object-fit ===
+
+- object-fit property specifies as how the <img /> or <video /> should be resized to fit its container.
