@@ -76,3 +76,9 @@ Best way to move around an floated element is to manipulate it with transform.
 === Object-fit ===
 
 - object-fit property specifies as how the <img /> or <video /> should be resized to fit its container.
+
+=== Solid Linear Gradient ===
+
+- We can use the linear-gradient to give clip-path like transparent effect
+- We use it like following
+  - background-image: linear-gradient(105deg, rgba(color1, .9) 0%, rgba(color1, .9) 50%, rgba(color2, .5) 50%)
