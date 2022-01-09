@@ -446,6 +446,33 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  display: block;
+  width: 90%;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid transparent; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::placeholder {
+    /* For others */
+    color: #999; }
+  .form__input::input-placeholder {
+    /* For IE */
+    color: #999; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
