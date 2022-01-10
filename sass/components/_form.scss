@@ -37,5 +37,17 @@
   }
 
   &__label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.5s;
+  }
+
+  &__input:placeholder-shown ~ &__label {
+    transform: translateY(-4.1rem);
+    opacity: 0;
+    visibility: hidden;
   }
 }

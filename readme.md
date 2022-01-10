@@ -82,3 +82,7 @@ Best way to move around an floated element is to manipulate it with transform.
 - We can use the linear-gradient to give clip-path like transparent effect
 - We use it like following
   - background-image: linear-gradient(105deg, rgba(color1, .9) 0%, rgba(color1, .9) 50%, rgba(color2, .5) 50%)
+
+=== placeholder-shown ===
+
+- it Represents any input/textarea element that is currently displaying placeholder text.
