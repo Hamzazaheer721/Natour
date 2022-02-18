@@ -86,3 +86,6 @@ Best way to move around an floated element is to manipulate it with transform.
 === placeholder-shown ===
 
 - it Represents any input/textarea element that is currently displaying placeholder text.
+
+==== Background-size ====
+using bg-size: cover and bg-size: 100%
