@@ -40,6 +40,7 @@ You can select the attributes with attribute selector in css
 ==> box-declaration-break <==
 
 It decides how element fragments should be rendered when broken across different multiple lines, columns or pages.
+
 -> box-declaration-break: clone
 Each element is rendered independently, with specified border, padding and margin wrapping each fragment. border-radius, border-image, and box-shadow are applied to each fragment independently. background is also drawn independently to each fragment, which means that background-image with background-repeat: no-repeat may nevertheless repeat multiple times
 
@@ -63,10 +64,8 @@ Clip path in google chrome breaks the overflow property
 
 ==> shape-outside <==
 
-shape outside property specifies the shape, which usually is non-rectangular, around which adjacent inline-content
-should wrap.
-By default, inline content wraps around the margin-box. Hence, shape-outside property allows customization to its
-wrapping, making it possible to wrap it around complex objects rather than simple boxes.
+shape outside property specifies the shape, which usually is non-rectangular, around which adjacent inline-content should wrap.
+By default, inline content wraps around the margin-box. Hence, shape-outside property allows customization to its wrapping, making it possible to wrap it around complex objects rather than simple boxes.
 Note: This is very demanding property, it requires the width, height and float as well.
 
 ==================== TIP ======================
